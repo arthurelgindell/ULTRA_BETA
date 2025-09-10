@@ -32,6 +32,10 @@ models/
 __pycache__/
 *.py[cod]
 *.egg-info/
+.venv/
+venv/
+*/venv/
+*/.venv/
 
 # IDE
 .cursor
