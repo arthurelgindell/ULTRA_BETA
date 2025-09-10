@@ -1,0 +1,17 @@
+## title
+
+Test Skill
+
+## summary
+
+This is a test skill for verification
+
+## keyPoints
+
+- Point 1
+- Point 2
+## concepts
+
+**name**: Test Concept
+**definition**: A test concept definition
+

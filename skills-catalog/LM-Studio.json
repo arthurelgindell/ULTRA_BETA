@@ -1,0 +1,1376 @@
+{
+  "features": [
+    {
+      "name": "Tool Use / Function Calling",
+      "description": "Enables LLMs to interact with external functions and APIs through the /v1/chat/completions endpoint, via LM Studio's REST API. It follows the same format as OpenAI's Function Calling API."
+    },
+    {
+      "name": "OpenAI-like REST API",
+      "description": "Run LM Studio as a local server to interact with it programmatically via an OpenAI-like REST API."
+    },
+    {
+      "name": "Native and Default Tool Use Support",
+      "description": "Offers two levels of tool use support: 'Native' for models with built-in support and a 'Default' mode that provides a custom system prompt for other models."
+    },
+    {
+      "name": "Streaming",
+      "description": "Supports streaming responses through the /v1/chat/completions endpoint by setting stream=true, with tool calls sent in chunks."
+    },
+    {
+      "name": "CLI",
+      "description": "A command-line interface (`lms`) to manage the server and models, for example `lms server start` and `lms load`."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Ability to run the API in headless mode."
+    },
+    {
+      "name": "Chat with Documents",
+      "description": "Functionality to chat with documents (RAG)."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "An advanced feature for model inference."
+    },
+    {
+      "name": "Structured Output",
+      "description": "API feature for getting structured output from models."
+    },
+    {
+      "name": "Run Local LLMs",
+      "description": "Download and run local LLMs like gpt-oss, Llama, Qwen, Mistral, or DeepSeek R1 on your computer."
+    },
+    {
+      "name": "Chat Interface",
+      "description": "Use a simple and flexible chat interface to interact with models."
+    },
+    {
+      "name": "Model Search & Download",
+      "description": "Search and download models directly from Hugging Face within the application."
+    },
+    {
+      "name": "Local API Server",
+      "description": "Serve local models on OpenAI-like endpoints, making them accessible locally and on the network."
+    },
+    {
+      "name": "Model & Configuration Management",
+      "description": "Manage your local models, prompts, and configurations."
+    },
+    {
+      "name": "Support for GGUF and MLX models",
+      "description": "Supports running LLMs on Mac, Windows, and Linux using llama.cpp (GGUF) and on Apple Silicon Macs using Apple's MLX."
+    },
+    {
+      "name": "Chat with Documents (RAG)",
+      "description": "Attach documents to your chat messages and interact with them entirely offline."
+    },
+    {
+      "name": "REST API",
+      "description": "Provides a REST API, including an OpenAI Compatibility API, to interact with local models from your own apps and scripts."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Run the server in headless mode without a graphical user interface."
+    },
+    {
+      "name": "Idle TTL and Auto-Evict",
+      "description": "Automatically evict models from memory after a configurable idle time to save resources."
+    },
+    {
+      "name": "Structured Output",
+      "description": "Enforce structured output from models via the API."
+    },
+    {
+      "name": "Tools and Function Calling",
+      "description": "Use tools and function calling capabilities with the API."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "An advanced feature to potentially speed up model inference."
+    },
+    {
+      "name": "Customizable User Interface",
+      "description": "Supports multiple languages, UI modes, and color themes."
+    },
+    {
+      "name": "LLM Chat and Text Completion",
+      "description": "Use LLMs to respond in chats or predict text completions"
+    },
+    {
+      "name": "Autonomous Agents",
+      "description": "Define functions as tools, and turn LLMs into autonomous agents that run completely locally"
+    },
+    {
+      "name": "Model Management",
+      "description": "Load, configure, and unload models from memory"
+    },
+    {
+      "name": "Text Embeddings",
+      "description": "Generate embeddings for text, and more!"
+    },
+    {
+      "name": "LLM Interaction",
+      "description": "Use LLMs to respond in chats or predict text completions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Define functions as tools, and turn LLMs into autonomous agents that run completely locally."
+    },
+    {
+      "name": "Model Management",
+      "description": "Load, configure, and unload models from memory."
+    },
+    {
+      "name": "Platform Support",
+      "description": "Supports for both browser and any Node-compatible environments."
+    },
+    {
+      "name": "Text Embedding",
+      "description": "Generate embeddings for text."
+    },
+    {
+      "name": "Image Input",
+      "description": "Provide image input to models."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Get structured responses from models."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Utilize speculative decoding for faster predictions."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Cancel ongoing model predictions."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Tokenize text using the model's tokenizer."
+    },
+    {
+      "name": "Manage Local Server",
+      "description": "Start and stop the local server using `lms server start` and `lms server stop`."
+    },
+    {
+      "name": "List Models",
+      "description": "List all downloaded models on the machine with `lms ls` and list currently loaded models with `lms ps`."
+    },
+    {
+      "name": "Load Model",
+      "description": "Load a model with options for GPU offloading (`--gpu`), context length (`--context-length`), and assigning an identifier (`--identifier`)."
+    },
+    {
+      "name": "Unload Models",
+      "description": "Unload a specific model or all models using `lms unload [--all]`."
+    },
+    {
+      "name": "Log Streaming",
+      "description": "Stream logs from LM Studio via `lms log stream`."
+    },
+    {
+      "name": "Bootstrap CLI",
+      "description": "A command (`lms bootstrap`) to add the `lms` tool to your system path."
+    },
+    {
+      "name": "Check Status",
+      "description": "Prints the status of LM Studio using `lms status`."
+    },
+    {
+      "name": "Create Project",
+      "description": "Create a new project with scaffolding using `lms create`."
+    },
+    {
+      "name": "Get Version",
+      "description": "Prints the version of the CLI using `lms version`."
+    },
+    {
+      "name": "lms status",
+      "description": "Prints the status of LM Studio."
+    },
+    {
+      "name": "lms server",
+      "description": "Commands for managing the local server, including starting and stopping it."
+    },
+    {
+      "name": "lms ls",
+      "description": "List all downloaded models."
+    },
+    {
+      "name": "lms ps",
+      "description": "List all loaded models."
+    },
+    {
+      "name": "lms load",
+      "description": "Load a model with options for GPU offloading, context length, and assigning an identifier."
+    },
+    {
+      "name": "lms unload",
+      "description": "Unload a model. Can unload all models with the --all flag."
+    },
+    {
+      "name": "lms create",
+      "description": "Create a new project with scaffolding."
+    },
+    {
+      "name": "lms log stream",
+      "description": "Stream logs from LM Studio."
+    },
+    {
+      "name": "lms version",
+      "description": "Prints the version of the CLI."
+    },
+    {
+      "name": "lms bootstrap",
+      "description": "Bootstrap the CLI to add it to the system's path."
+    },
+    {
+      "name": "lms load",
+      "description": "Loads a model into memory. You can optionally set parameters such as context length, GPU offload, and TTL."
+    },
+    {
+      "name": "lms unload",
+      "description": ""
+    },
+    {
+      "name": "lms get",
+      "description": ""
+    },
+    {
+      "name": "lms server start",
+      "description": ""
+    },
+    {
+      "name": "lms server status",
+      "description": ""
+    },
+    {
+      "name": "lms server stop",
+      "description": ""
+    },
+    {
+      "name": "lms ls",
+      "description": "List your locally downloaded models."
+    },
+    {
+      "name": "lms push",
+      "description": ""
+    },
+    {
+      "name": "lms ps",
+      "description": ""
+    },
+    {
+      "name": "lms log stream",
+      "description": "Stream logs from LM Studio. Useful for debugging prompts sent to the model."
+    },
+    {
+      "name": "Set a custom identifier",
+      "description": "Assign a custom identifier to the loaded model for API reference using the --identifier flag."
+    },
+    {
+      "name": "Set context length",
+      "description": "Set how many tokens the model will consider as context when generating text using the --context-length flag."
+    },
+    {
+      "name": "Set GPU offload",
+      "description": "Control GPU memory usage with the --gpu flag."
+    },
+    {
+      "name": "Set TTL",
+      "description": "Set an auto-unload timer in seconds with the --ttl flag."
+    },
+    {
+      "name": "Operate on a remote LM Studio instance",
+      "description": "Connect to a remote LM Studio instance using the --host flag."
+    },
+    {
+      "name": "lms unload",
+      "description": "Unload one or all models from memory using the command line. You can optionally specify a model key to unload a specific model, or use the --all flag to unload all models."
+    },
+    {
+      "name": "Remote Operation",
+      "description": "The `lms unload` command supports the --host flag to connect to a remote LM Studio instance and unload models from it."
+    },
+    {
+      "name": "lms unload",
+      "description": "Unload one or all models from memory using the command line."
+    },
+    {
+      "name": "Unload a specific model",
+      "description": "Unload a single model from memory by running: lms unload <model_key>. If no model key is provided, you will be prompted to select from currently loaded models."
+    },
+    {
+      "name": "Unload all models",
+      "description": "To unload all currently loaded models at once: lms unload --all"
+    },
+    {
+      "name": "Operate on a remote LM Studio instance",
+      "description": "lms unload supports the --host flag to connect to a remote LM Studio instance: lms unload <model_key> --host <host>"
+    },
+    {
+      "name": "lms get",
+      "description": "Search and download models from the command line. If no model is specified, it shows staff-picked recommendations. Downloaded models are stored in the LM Studio model directory."
+    },
+    {
+      "name": "Specify quantization",
+      "description": "Download a specific model quantization by appending '@' to the model name, for example 'llama-3.1-8b@q4_k_m'."
+    },
+    {
+      "name": "Filter by format",
+      "description": "Filter search results to show only MLX or GGUF models using the --mlx or --gguf flags."
+    },
+    {
+      "name": "Control search results",
+      "description": "Limit the number of results shown with the --limit flag, or always show all options with --always-show-all-results and --always-show-download-options."
+    },
+    {
+      "name": "Automated downloads",
+      "description": "For scripting, skip all prompts using the --yes flag. This automatically selects the first matching model and recommended quantization for your hardware."
+    },
+    {
+      "name": "Search and Download Models",
+      "description": "Search and download models from online repositories via the command line. If no model is specified, it shows staff-picked recommendations. Downloaded models are stored in the LM Studio model directory."
+    },
+    {
+      "name": "Specify Quantization",
+      "description": "Download a specific model quantization by appending '@' followed by the quantization format to the model name, for example: 'lms get llama-3.1-8b@q4_k_m'."
+    },
+    {
+      "name": "Filter by Format",
+      "description": "Filter search results to show only MLX or GGUF models by using the --mlx or --gguf flags respectively."
+    },
+    {
+      "name": "Control Search Results",
+      "description": "Limit the number of search results using the --limit flag. You can also force all results or all download options to be shown using --always-show-all-results and --always-show-download-options."
+    },
+    {
+      "name": "Automated Downloads",
+      "description": "Enable automated downloads for scripting by using the --yes flag, which skips all prompts and automatically selects the first matching model and the recommended quantization for your hardware."
+    },
+    {
+      "name": "lms server start",
+      "description": "Start the LM Studio local server with customizable port and logging options. This command launches the server to allow interaction with loaded models via HTTP API calls."
+    },
+    {
+      "name": "LM Studio CLI",
+      "description": "A command-line interface to manage LM Studio functionalities, including commands like `lms load`, `lms unload`, `lms get`, `lms server start`, `lms server status`, `lms server stop`, `lms ls`, `lms push`, `lms ps`, and `lms log stream`."
+    },
+    {
+      "name": "Python SDK",
+      "description": "A Software Development Kit for interacting with LM Studio from Python."
+    },
+    {
+      "name": "TS/JS SDK",
+      "description": "A Software Development Kit for interacting with LM Studio from TypeScript/JavaScript."
+    },
+    {
+      "name": "Local Server Management",
+      "description": "Start the LM Studio local server with customizable port and logging options to interact with loaded models via HTTP API calls."
+    },
+    {
+      "name": "CLI Commands",
+      "description": "Provides a command-line interface with commands such as lms load, unload, get, server start, server status, server stop, ls, push, ps, and log stream."
+    },
+    {
+      "name": "lms server status",
+      "description": "Check the status of your running LM Studio server instance. The command displays the current status of the LM Studio local server, including whether it's running and its configuration."
+    },
+    {
+      "name": "lms load",
+      "description": "A CLI command, likely for loading models."
+    },
+    {
+      "name": "lms unload",
+      "description": "A CLI command, likely for unloading models."
+    },
+    {
+      "name": "lms get",
+      "description": "A CLI command, likely for retrieving information."
+    },
+    {
+      "name": "lms server start",
+      "description": "A CLI command to start the LM Studio server."
+    },
+    {
+      "name": "lms server stop",
+      "description": "A CLI command to stop the LM Studio server."
+    },
+    {
+      "name": "lms ls",
+      "description": "A CLI command, likely for listing models or files."
+    },
+    {
+      "name": "lms push",
+      "description": "A CLI command, likely for pushing models to a repository."
+    },
+    {
+      "name": "lms ps",
+      "description": "A CLI command, likely for listing running processes."
+    },
+    {
+      "name": "lms log stream",
+      "description": "A CLI command to stream logs."
+    },
+    {
+      "name": "JSON Output",
+      "description": "Output the status in machine-readable JSON format using the --json flag."
+    },
+    {
+      "name": "Logging Control",
+      "description": "Adjust logging verbosity using the --verbose, --quiet, or --log-level flags."
+    },
+    {
+      "name": "LM Studio CLI",
+      "description": "A command-line interface that includes commands such as lms load, unload, get, server start, server status, server stop, ls, push, ps, and log stream."
+    },
+    {
+      "name": "lms server stop",
+      "description": "Stop the running LM Studio server instance. The command gracefully stops the running LM Studio server. Any active request will be terminated when the server is stopped."
+    },
+    {
+      "name": "lms server stop",
+      "description": "Stop the running LM Studio server instance. The lms server stop command gracefully stops the running LM Studio server. Any active request will be terminated when the server is stopped."
+    },
+    {
+      "name": "lms load",
+      "description": ""
+    },
+    {
+      "name": "lms ls",
+      "description": ""
+    },
+    {
+      "name": "lms log stream",
+      "description": ""
+    },
+    {
+      "name": "lms ls",
+      "description": "List all downloaded models in your LM Studio installation. The command displays a list of all models downloaded to your machine, including their size, architecture, and parameters."
+    },
+    {
+      "name": "Filter by model type",
+      "description": "List only LLM models using the '--llm' flag or only embedding models using the '--embedding' flag."
+    },
+    {
+      "name": "Additional output formats",
+      "description": "Get detailed information about models using the '--detailed' flag or output the list in JSON format using the '--json' flag."
+    },
+    {
+      "name": "Operate on a remote LM Studio instance",
+      "description": "Supports the '--host' flag to connect to and operate on a remote LM Studio instance."
+    },
+    {
+      "name": "lms push",
+      "description": "Upload a plugin, preset, or `model.yaml` to the LM Studio Hub. The command packages the contents of the current directory and uploads it."
+    },
+    {
+      "name": "Share Artifacts",
+      "description": "You can use the `lms push` command to share presets, plugins, or `model.yaml` files."
+    },
+    {
+      "name": "Revision Tracking",
+      "description": "When used with `--write-revision`, the returned revision number is written to the `manifest.json` file to track revisions in version control."
+    },
+    {
+      "name": "Metadata Overrides",
+      "description": "The `--overrides` parameter can be used to modify the metadata before pushing, for example: `lms push --overrides '{\"description\": \"new-description\"}'`."
+    },
+    {
+      "name": "Structured Output",
+      "description": "Enforce LLM response formats using JSON schemas via the /v1/chat/completions endpoint."
+    },
+    {
+      "name": "Local Server",
+      "description": "Run LM Studio as a local server, providing an OpenAI-like REST API for programmatic interaction."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Run the API server without the graphical user interface."
+    },
+    {
+      "name": "Chat with Documents",
+      "description": "Engage in conversations with your documents using Retrieval-Augmented Generation (RAG)."
+    },
+    {
+      "name": "Download an LLM",
+      "description": "Search for and download Large Language Models directly within the application."
+    },
+    {
+      "name": "Offline Operation",
+      "description": "Use LM Studio and loaded models without an active internet connection."
+    },
+    {
+      "name": "Import Models",
+      "description": "Import model files from your local system into LM Studio."
+    },
+    {
+      "name": "Configuration Presets",
+      "description": "Create, import, share, and publish model configuration presets."
+    },
+    {
+      "name": "Tools and Function Calling",
+      "description": "Utilize tools and function calling capabilities through the API."
+    },
+    {
+      "name": "Local Server",
+      "description": "Run LM Studio as a local server with an OpenAI-like REST API for programmatic access from your own code."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Run the LM Studio server without a graphical user interface."
+    },
+    {
+      "name": "Offline Operation",
+      "description": "Ability to use the application without an internet connection."
+    },
+    {
+      "name": "Chat with Documents",
+      "description": "Engage in conversations with your documents."
+    },
+    {
+      "name": "Download LLMs",
+      "description": "Discover and download Large Language Models from within the application."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "An advanced feature for model processing."
+    },
+    {
+      "name": "Import Models",
+      "description": "Import models into the application."
+    },
+    {
+      "name": "UI Customization",
+      "description": "Customize the user interface with different languages, UI modes, and color themes."
+    },
+    {
+      "name": "Run Local LLMs",
+      "description": "Download and run local LLMs like gpt-oss, Llama, Qwen, Phi, and other LLMs locally."
+    },
+    {
+      "name": "Chat Interface",
+      "description": "Use a simple and flexible chat interface to interact with local models."
+    },
+    {
+      "name": "Model Discovery and Download",
+      "description": "Search and download models from Hugging Face directly within the application."
+    },
+    {
+      "name": "Local API Server",
+      "description": "Serve local models on OpenAI-like endpoints, locally and on the network."
+    },
+    {
+      "name": "Model Management",
+      "description": "Manage your local models, prompts, and configurations."
+    },
+    {
+      "name": "Multiple Runtimes",
+      "description": "Supports running LLMs on Mac, Windows, and Linux using llama.cpp (GGUF) and on Apple Silicon Macs using Apple's MLX."
+    },
+    {
+      "name": "Offline Document Chat (RAG)",
+      "description": "Attach documents to your chat messages and interact with them entirely offline."
+    },
+    {
+      "name": "API Access",
+      "description": "Provides a REST API, including an OpenAI compatible one, to interact with local models from your own apps and scripts."
+    },
+    {
+      "name": "MCP Client",
+      "description": "Install Model Context Protocol (MCP) servers and use them with your local models."
+    },
+    {
+      "name": "Tools and Function Calling",
+      "description": "API feature for enabling tools and function calling with models."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Advanced feature for faster model inference."
+    },
+    {
+      "name": "Customizable UI",
+      "description": "Change languages, UI modes, and color themes in the user interface."
+    },
+    {
+      "name": "Run Local LLMs",
+      "description": "Download and run local LLMs like gpt-oss, Llama, Qwen, Phi, Mistral, or DeepSeek R1 on your computer."
+    },
+    {
+      "name": "API Functionality",
+      "description": "Use LM Studio's REST API from your own apps and scripts, with features like Headless Mode, Structured Output, and Tools/Function Calling."
+    },
+    {
+      "name": "Offline Operation",
+      "description": "Use the application and chat with documents entirely offline."
+    },
+    {
+      "name": "Configuration Presets",
+      "description": "Import, share, publish, and manage configuration presets for models."
+    },
+    {
+      "name": "Advanced Model Settings",
+      "description": "Utilize advanced features like Speculative Decoding, per-model defaults, and custom prompt templates."
+    },
+    {
+      "name": "Customizable User Interface",
+      "description": "Change the application's language, UI mode, and color theme."
+    },
+    {
+      "name": "Download and Manage LLMs",
+      "description": "Download LLMs from a catalog, import existing models, or download from the terminal using the `lms get` command with a keyword or Hugging Face URL."
+    },
+    {
+      "name": "Chat Interface",
+      "description": "A user interface for chatting with local LLMs, including features to manage chat sessions."
+    },
+    {
+      "name": "Chat with Documents (RAG)",
+      "description": "Use Retrieval-Augmented Generation to chat with your local documents."
+    },
+    {
+      "name": "OpenAI-Compatible Local Server",
+      "description": "Run a local server that exposes OpenAI-compatible REST endpoints for model inference, including support for streaming responses."
+    },
+    {
+      "name": "Tool and Function Calling",
+      "description": "Use LLMs that support tool use and function calling through the OpenAI-like API. Supports the `tool_choice` parameter, parallel tool calls, and streaming of tool call arguments."
+    },
+    {
+      "name": "Structured Output",
+      "description": "Enforce structured output formats from the model via the API."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Accelerate inference by using a smaller draft model. This can be enabled in API requests by providing a `draft_model`."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Run the LM Studio server without the graphical user interface for API-only access."
+    },
+    {
+      "name": "API Model Management",
+      "description": "Includes features like Idle TTL and Auto-Evict to automatically unload models after a period of inactivity. The API also provides model capabilities (e.g., `tool_use`) in the `/models` endpoint response."
+    },
+    {
+      "name": "Configuration Presets",
+      "description": "Create, import, share, and publish configuration presets. Presets can also be specified in API requests."
+    },
+    {
+      "name": "Customizable Model Configurations",
+      "description": "Define model configurations using `model.yaml` files, set per-model defaults, and customize prompt templates."
+    },
+    {
+      "name": "Offline Operation",
+      "description": "The application can be operated without an internet connection."
+    },
+    {
+      "name": "SDKs and CLI",
+      "description": "Provides Python and TS/JS SDKs, and a Command-Line Interface (CLI) for interacting with the application."
+    },
+    {
+      "name": "Manage chats",
+      "description": "Functionality to manage chat sessions within the application."
+    },
+    {
+      "name": "Download an LLM",
+      "description": "Download Large Language Models directly through the app's interface."
+    },
+    {
+      "name": "Chat with Documents",
+      "description": "Use Retrieval-Augmented Generation (RAG) to chat with local documents."
+    },
+    {
+      "name": "Offline Operation",
+      "description": "Ability to use the application without an active internet connection."
+    },
+    {
+      "name": "Model Context Protocol (MCP)",
+      "description": "An integration protocol for models."
+    },
+    {
+      "name": "model.yaml",
+      "description": "Define, configure, and publish models using a `model.yaml` file."
+    },
+    {
+      "name": "Presets",
+      "description": "Create, import, share, publish, and update model configuration presets."
+    },
+    {
+      "name": "API",
+      "description": "Provides an API with REST endpoints for programmatic control, including headless mode, structured output, and tool use."
+    },
+    {
+      "name": "Headless Mode",
+      "description": "Run the application without a graphical user interface."
+    },
+    {
+      "name": "Idle TTL and Auto-Evict",
+      "description": "Configure time-to-live and auto-eviction for idle models to manage resources."
+    },
+    {
+      "name": "Structured Output",
+      "description": "Force models to generate structured output like JSON through the API."
+    },
+    {
+      "name": "Tools and Function Calling",
+      "description": "Integrate external tools and functions with models via the API."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "An advanced feature to accelerate model inference."
+    },
+    {
+      "name": "Import Models",
+      "description": "Import models from external sources."
+    },
+    {
+      "name": "Per-model Defaults",
+      "description": "Set default configurations on a per-model basis."
+    },
+    {
+      "name": "Prompt Template",
+      "description": "Customize prompt templates used for the models."
+    },
+    {
+      "name": "Customizable User Interface",
+      "description": "Change UI languages, modes, and color themes."
+    },
+    {
+      "name": "Python SDK",
+      "description": "A Software Development Kit for Python integration."
+    },
+    {
+      "name": "TS/JS SDK",
+      "description": "A Software Development Kit for TypeScript/JavaScript integration."
+    },
+    {
+      "name": "CLI Reference",
+      "description": "A Command-Line Interface for interacting with the application."
+    },
+    {
+      "name": "Python SDK",
+      "description": "A library published on PyPI named 'lmstudio-python' that allows usage in Python projects. The source code is available on GitHub."
+    },
+    {
+      "name": "Chat",
+      "description": "Functionality for chat completions."
+    },
+    {
+      "name": "Image Input",
+      "description": "Ability to use images as input for predictions."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Get structured responses from the language model."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Support for speculative decoding in predictions."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Functionality for standard text completions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Supports creating agentic flows with `.act()` calls and tool definitions."
+    },
+    {
+      "name": "Text Embedding",
+      "description": "Capability to generate embedding vectors from text."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Functionality to tokenize text."
+    },
+    {
+      "name": "Model Management",
+      "description": "Manage models by listing downloaded models, listing loaded models, and loading/accessing models."
+    },
+    {
+      "name": "Model Info Retrieval",
+      "description": "Get model information such as context length, load configuration, and general model info."
+    },
+    {
+      "name": "API Server Discovery",
+      "description": "The SDK can check if a specified API server is running and can also scan default local ports to find a running API server instance."
+    },
+    {
+      "name": "REPL Usage",
+      "description": "Use lmstudio-python in a REPL (Read-Eval-Print Loop) to interactively communicate with LLMs, manage models, and more."
+    },
+    {
+      "name": "Convenience API",
+      "description": "A simplified API for interactive use that manages resources via `atexit` hooks, allowing a default synchronous client session across multiple commands."
+    },
+    {
+      "name": "Scoped Resource API",
+      "description": "An API that uses `with` statements to ensure deterministic cleanup of network communication resources."
+    },
+    {
+      "name": "Asynchronous API",
+      "description": "An asynchronous structured concurrency API compatible with the asynchronous Python REPL (`python -m asyncio`)."
+    },
+    {
+      "name": "Chat",
+      "description": "Engage in chat completions with LLMs."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Obtain structured responses from models."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Perform text completions with LLMs."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Use the `.act()` call and define tools for agentic workflows."
+    },
+    {
+      "name": "Text Embedding",
+      "description": "Generate embedding vectors from text."
+    },
+    {
+      "name": "Model Management",
+      "description": "List downloaded models, list loaded models, and load/access models."
+    },
+    {
+      "name": "Model Information",
+      "description": "Get model details such as context length, load configuration, and general info."
+    },
+    {
+      "name": "Chat Completions",
+      "description": "APIs for multi-turn chat conversations with an LLM. Use `llm.respond(...)` to generate completions for a chat conversation."
+    },
+    {
+      "name": "Streaming Chat Response",
+      "description": "Stream an AI's response to a chat prompt, displaying text fragments as they are received using `model.respond_stream()`."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Provides the ability to cancel a prediction that is in progress."
+    },
+    {
+      "name": "Chat Context Management",
+      "description": "Construct and manage a multi-turn conversation context by creating a `Chat` object and adding messages."
+    },
+    {
+      "name": "Customizable Inferencing Parameters",
+      "description": "Customize inferencing parameters such as `temperature` and `maxTokens` via a `config` keyword parameter on the `.respond()` method."
+    },
+    {
+      "name": "Prediction Statistics",
+      "description": "Access prediction metadata, such as the model used, number of generated tokens, time to first token, and stop reason."
+    },
+    {
+      "name": "Progress Callbacks",
+      "description": "Receive updates on prompt processing and token generation using callbacks like `on_prompt_processing_progress`, `on_first_token`, `on_prediction_fragment`, and `on_message`."
+    },
+    {
+      "name": "Image Input",
+      "description": "Functionality for using image inputs with language models."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Functionality for generating structured responses from language models."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Support for speculative decoding to speed up inference."
+    },
+    {
+      "name": "Text Completions",
+      "description": "API for basic text completions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Support for creating agentic flows using `.act()` calls and tool definitions."
+    },
+    {
+      "name": "Text Embedding",
+      "description": "Functionality for generating embedding vectors from text."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Functionality for tokenizing text."
+    },
+    {
+      "name": "Model Management",
+      "description": "Manage models by listing downloaded models, listing loaded models, and loading/accessing models in memory."
+    },
+    {
+      "name": "Chat Completions",
+      "description": "Use `llm.respond(...)` to generate completions for a multi-turn chat conversation with an LLM."
+    },
+    {
+      "name": "Streaming a Chat Response",
+      "description": "Stream the AI's response to a chat prompt using `model.respond_stream()`, displaying text fragments as they are received."
+    },
+    {
+      "name": "Cancelling a Chat Response",
+      "description": "Cancel a prediction that is in progress."
+    },
+    {
+      "name": "Model Management",
+      "description": "Obtain a model handle, list downloaded and loaded models, and load/access models. For example, `lms.llm(\"qwen2.5-7b-instruct\")`."
+    },
+    {
+      "name": "Chat Context Management",
+      "description": "Construct and manage a multi-turn conversation context using `lms.Chat`, including adding system and user messages."
+    },
+    {
+      "name": "Customizable Inferencing Parameters",
+      "description": "Pass in inferencing parameters such as `temperature` and `maxTokens` via the `config` keyword parameter on `.respond()`."
+    },
+    {
+      "name": "Progress Callbacks",
+      "description": "Use callbacks to get updates on prompt processing (`on_prompt_processing_progress`), first token emission (`on_first_token`), prediction fragments (`on_prediction_fragment`), and completed messages (`on_message`)."
+    },
+    {
+      "name": "Image Input",
+      "description": "Ability to use images as input for LLM predictions."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Generate structured responses from the LLM."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "A feature for LLM prediction."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Utilize agentic capabilities with the `.act()` call and tool definitions."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Tokenize text."
+    },
+    {
+      "name": "Image Input",
+      "description": "API for passing images as input to Vision-Language Models (VLMs). You can pass images to the model using the .respond() method. The server supports JPEG, PNG, and WebP image formats. Requires Python SDK version 1.1.0."
+    },
+    {
+      "name": "Chat",
+      "description": "Functionality for chat completion with language models."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Get structured responses from the model."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "A feature for accelerating model predictions."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Ability to cancel ongoing model predictions."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Functionality for basic text completions."
+    },
+    {
+      "name": "Configuration Parameters",
+      "description": "Allows setting various parameters for LLM predictions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Supports building agentic workflows using the .act() call and tool definitions."
+    },
+    {
+      "name": "Tool Definition",
+      "description": "Allows defining tools for use in agentic flows."
+    },
+    {
+      "name": "Manage Models",
+      "description": "Programmatically list downloaded models, list loaded models, and load/access models."
+    },
+    {
+      "name": "Model Info",
+      "description": "Retrieve information about models, including context length, load configuration, and general model info."
+    },
+    {
+      "name": "Image Input",
+      "description": "API for passing images as input to Vision-Language Models (VLMs). You can pass images to the model using the .respond() method. Supported image formats include JPEG, PNG, and WebP."
+    },
+    {
+      "name": "Chat",
+      "description": "Functionality for chat completions and working with chat histories."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Enables forcing the model to produce a structured response."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "A feature for potentially faster model inference."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Provides the ability to cancel ongoing model predictions."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Standard text completion generation."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Supports building agentic flows with the .act() call and tool definitions."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Allows for tokenizing text based on the model."
+    },
+    {
+      "name": "Model Info",
+      "description": "Retrieve model information such as context length, load configuration, and general model info."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Enforce a structured response from the model using Pydantic models or JSON Schema, guaranteeing the output conforms to the provided schema."
+    },
+    {
+      "name": "Chat Completion",
+      "description": "Functionality for chat-based interactions with the language model."
+    },
+    {
+      "name": "Image Input",
+      "description": "Ability to provide image inputs to the model."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "Feature for speculative decoding in model predictions."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Allows for the cancellation of ongoing model predictions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Supports agentic flows using the `.act()` call and tool definitions."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Provides text tokenization capabilities."
+    },
+    {
+      "name": "Model Management",
+      "description": "Includes features to list downloaded models, list loaded models, and load/access models."
+    },
+    {
+      "name": "Model Information",
+      "description": "Allows retrieval of model information such as context length, load configuration, and general model info."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "A technique that can substantially increase the generation speed of large language models (LLMs) without reducing response quality. It is used by providing a `draftModel` parameter when performing a prediction."
+    },
+    {
+      "name": "Chat",
+      "description": "Basics of chat completion."
+    },
+    {
+      "name": "Image Input",
+      "description": "Support for image input in LLM predictions."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Functionality for getting structured responses from LLMs."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Ability to cancel ongoing LLM predictions."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Functionality for text completions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Includes the `.act()` call and tool definition for creating agentic workflows."
+    },
+    {
+      "name": "Manage Models",
+      "description": "Includes listing downloaded models, listing loaded models, and loading/accessing models."
+    },
+    {
+      "name": "Model Info",
+      "description": "Includes getting context length, load configuration, and general model information."
+    },
+    {
+      "name": "Cancelling Predictions",
+      "description": "Stop an ongoing prediction in lmstudio-python using the streaming API, based on application-specific criteria that cannot be represented by `stopStrings` or `maxPredictedTokens` settings."
+    },
+    {
+      "name": "Image Input",
+      "description": "Allows providing images as input to the language model."
+    },
+    {
+      "name": "Structured Response",
+      "description": "Enables receiving responses from the model in a structured format."
+    },
+    {
+      "name": "Speculative Decoding",
+      "description": "A feature for advanced model prediction."
+    },
+    {
+      "name": "Text Completions",
+      "description": "Functionality for generating text completions."
+    },
+    {
+      "name": "Agentic Flows",
+      "description": "Supports creating agent-like behaviors using the `.act()` call and tool definitions."
+    },
+    {
+      "name": "Tokenization",
+      "description": "Provides tools for tokenizing text."
+    },
+    {
+      "name": "Model Management",
+      "description": "Allows users to list downloaded models, list loaded models, and load/access models programmatically."
+    },
+    {
+      "name": "Model Info",
+      "description": "Enables retrieving model information such as context length and load configuration."
+    }
+  ],
+  "api_usage": {},
+  "installation": {
+    "steps": [
+      "Install the CLI by running `npx lmstudio install-cli`.",
+      "Start LM Studio as a server, either from the 'Developer' tab in the app or via the CLI command `lms server start`.",
+      "Load a model from the 'Chat' or 'Developer' tabs in the app, or via the CLI command `lms load`.",
+      "Interact with the server via the OpenAI-like REST API using tools like curl or client SDKs."
+    ],
+    "platforms": [
+      "macOS",
+      "Linux",
+      "Windows"
+    ]
+  },
+  "integrations": [
+    "Python SDK (via the official OpenAI library)",
+    "TS/JS SDK",
+    "CLI (Command Line Interface)",
+    "cURL",
+    "Model Context Protocol (MCP)",
+    "model.yaml files for model definitions",
+    "Hugging Face (for model search and download)",
+    "OpenAI-compatible API",
+    "LM Studio REST API (beta)",
+    "Python SDK",
+    "TypeScript/JavaScript (TS/JS) SDK",
+    "Command Line Interface (CLI)",
+    "Model Context Protocol (MCP) client",
+    "llama.cpp",
+    "Apple's MLX",
+    "Interactive convenience API",
+    "Synchronous scoped resource API",
+    "Asynchronous structured concurrency API",
+    "Jupyter notebooks",
+    "LM Studio CLI",
+    "GitHub",
+    "Plugins",
+    "Using `npm` Dependencies",
+    "Tools Provider",
+    "Prompt Preprocessor",
+    "Generators",
+    "LM Studio App",
+    "CLI",
+    "CLI Reference",
+    "HTTP API",
+    "Web Applications",
+    "VS Code extensions",
+    "LM Studio Hub",
+    "presets",
+    "plugins",
+    "model.yaml",
+    "Version Control",
+    "OpenAI client SDKs",
+    "llama.cpp (for GGUF structured output)",
+    "Outlines (for MLX structured output)",
+    "curl",
+    "OpenAI-like REST API",
+    "Python SDK (via OpenAI client)",
+    "llama.cpp (for GGUF models)",
+    "Outlines (for MLX models)",
+    "OpenAI Compatibility API",
+    "LM Studio REST API",
+    "Model Context Protocol (MCP) servers",
+    "Apple's MLX (for Apple Silicon Macs)",
+    "llama.cpp (GGUF model runtime)",
+    "Apple's MLX (model runtime for Apple Silicon)",
+    "Command-Line Interface (CLI)",
+    "OpenAI-Compatible REST API",
+    "Hugging Face (for downloading models via the CLI)",
+    "REST Endpoints",
+    "Tools and Function Calling",
+    "Python projects via the `lmstudio-python` SDK",
+    "Python package managers such as pip, pdm, and uv",
+    "LM Studio application's local server API",
+    "Standard Python REPL",
+    "Asynchronous Python REPL (python -m asyncio)",
+    "Jupyter Notebooks",
+    "Pydantic",
+    "msgspec"
+  ],
+  "configuration": [
+    "Define available functions in the `tools` parameter of a `/v1/chat/completions` API request.",
+    "Specify the model to use via the `model` parameter in API calls.",
+    "Enable streaming by setting `stream=true` in API requests.",
+    "Manage presets for model configurations.",
+    "Set per-model defaults.",
+    "Customize prompt templates.",
+    "Configure Idle TTL and Auto-Evict for loaded models via the API.",
+    "Manage local models, prompts, and configurations through the user interface.",
+    "Use presets to save, share, and publish model configurations.",
+    "Set per-model default settings.",
+    "Customize prompt templates for different models.",
+    "Configure Idle TTL and Auto-Evict settings for memory management.",
+    "Manage LM Runtimes (llama.cpp, MLX) for model execution.",
+    "Define model metadata and properties using model.yaml files.",
+    "Adjust the number of seconds to wait for responses and event notifications in the synchronous API using the lmstudio.set_sync_api_timeout() function.",
+    "Query the current synchronous API timeout using the lmstudio.get_sync_api_timeout() function.",
+    "For the asynchronous API, use general purpose async timeout mechanisms, such as asyncio.wait_for() or anyio.move_on_after().",
+    "LLMLoadModelConfig",
+    "LLMPredictionConfigInput",
+    "lms load [--gpu=max|auto|0.0-1.0]: Set GPU offloading. `1.0` attempts to offload 100% to the GPU.",
+    "lms load [--context-length=1-N]: Set the context length for the model.",
+    "lms load <model_name> --identifier=\"gpt-4-turbo\": Assign a custom identifier to a loaded model.",
+    "lms unload [--all]: Unload all currently loaded models.",
+    "The models directory used by `lms ls` is set in the '📂 My Models' tab in the LM Studio app.",
+    "lms load [--gpu=max|auto|0.0-1.0]: Controls GPU offloading. '--gpu=1.0' attempts to offload 100% to the GPU.",
+    "lms load [--context-length=1-N]: Sets the context length for the model.",
+    "lms load <model> --identifier=\"<id>\": Assigns a consistent identifier to a local LLM.",
+    "lms unload [--all]: Unloads all currently loaded models.",
+    "The models directory can be set in the '📂 My Models' tab in the LM Studio app, which `lms ls` reflects.",
+    "[path] (optional): The path of the model to load.",
+    "--ttl (optional): Unloads the model if not used for a specified number of seconds.",
+    "--gpu (optional): Specifies how much of the model to offload to the GPU. Values: 0-1, off, max.",
+    "--context-length (optional): Sets the number of tokens to consider as context.",
+    "--identifier (optional): Assigns an identifier to the loaded model for API reference.",
+    "--host: Connects to a remote LM Studio instance.",
+    "[model_key] (optional) : string - The key of the model to unload. If not provided, you will be prompted to select one.",
+    "--all (optional) : flag - Unload all currently loaded models.",
+    "--host (optional) : string - The host address of a remote LM Studio instance to connect to.",
+    "[model_key] (optional) : string - The key of the model to unload. If not provided, you will be prompted to select one",
+    "--all (optional) : flag - Unload all currently loaded models",
+    "--host (optional) : string - The host address of a remote LM Studio instance to connect to",
+    "[search term] (optional) : string - The model to download. For specific quantizations, append '@' (e.g., 'llama-3.1-8b@q4_k_m')",
+    "--mlx (optional) : flag - Include MLX models in search results",
+    "--gguf (optional) : flag - Include GGUF models in search results",
+    "--limit (optional) : number - Limit the number of model options shown",
+    "--always-show-all-results (optional) : flag - Always show search results, even with exact matches",
+    "--always-show-download-options (optional) : flag - Always show quantization options, even with exact matches",
+    "--yes (optional) : flag - Skip all confirmations. Uses first match and recommended quantization",
+    "[search term] (optional) : string - The model to download. For specific quantizations, append '@' (e.g., 'llama-3.1-8b@q4_k_m').",
+    "--mlx (optional) : flag - Include MLX models in search results.",
+    "--gguf (optional) : flag - Include GGUF models in search results.",
+    "--limit (optional) : number - Limit the number of model options shown.",
+    "--always-show-all-results (optional) : flag - Always show search results, even with exact matches.",
+    "--always-show-download-options (optional) : flag - Always show quantization options, even with exact matches.",
+    "--yes (optional) : flag - Skip all confirmations. Uses first match and recommended quantization.",
+    "--port (optional): Port to run the server on. If not provided, uses the last used port.",
+    "--cors (optional): Enable CORS support for web application development. When not set, CORS is disabled.",
+    "--port (optional) : number - Port to run the server on. If not provided, uses the last used port.",
+    "--cors (optional) : flag - Enable CORS support for web application development. When not set, CORS is disabled.",
+    "--json: Output the status in JSON format.",
+    "--verbose: Enable detailed logging output.",
+    "--quiet: Suppress all logging output.",
+    "--log-level: The level of logging to use. Defaults to 'info'.",
+    "--json (optional) : flag: Output the status in JSON format",
+    "--verbose (optional) : flag: Enable detailed logging output",
+    "--quiet (optional) : flag: Suppress all logging output",
+    "--log-level (optional) : string: The level of logging to use. Defaults to 'info'",
+    "--llm: Show only LLMs.",
+    "--embedding: Show only embedding models.",
+    "--json: Output the list in JSON format.",
+    "--detailed: Show detailed information about each model.",
+    "--host <host>: Connect to a remote LM Studio instance.",
+    "--overrides (optional) : string - A JSON string of values to override in the manifest or metadata",
+    "--write-revision (optional) : flag - Write the returned revision number to `manifest.json`",
+    "Set the base_url to 'http://localhost:1234/v1' and api_key to 'lm-studio' when initializing an OpenAI client.",
+    "Specify a model in API requests using the 'model' parameter.",
+    "Use the 'response_format' parameter with a 'json_schema' to enforce structured JSON output.",
+    "Adjust standard inference parameters like 'temperature', 'max_tokens', and 'stream'.",
+    "Configure per-model default settings.",
+    "Define custom prompt templates for different models.",
+    "Set Idle Time-To-Live (TTL) and auto-eviction policies for loaded models via the API.",
+    "Customize the user interface with different languages, UI modes, and color themes.",
+    "Start the server from the 'Developer' tab in the UI or via the `lms server start` CLI command.",
+    "Use Presets to manage model configurations, which can be imported, shared, and published.",
+    "Define models using `model.yaml` files.",
+    "Set per-model default configurations.",
+    "Configure API settings like Idle TTL and Auto-Evict for loaded models.",
+    "Manage local models, prompts, and configurations",
+    "Create, import, and share Presets for model settings",
+    "Configure advanced features like Speculative Decoding",
+    "Set per-model default settings",
+    "Customize prompt templates",
+    "Set Idle TTL and Auto-Evict for loaded models via the API",
+    "Change user interface language",
+    "Switch between UI Modes",
+    "Select different Color Themes",
+    "Manage local models, prompts, and configurations.",
+    "Create, import, share, and publish configuration presets.",
+    "Define custom prompt templates.",
+    "Customize the user interface language, mode, and color theme.",
+    "Manage LM Runtimes (llama.cpp, MLX) via keyboard shortcuts (⌘ Shift R on Mac, Ctrl Shift R on Windows/Linux).",
+    "Use configuration presets which can be imported, shared, published, and specified in API requests.",
+    "Define model properties and configurations using `model.yaml` files.",
+    "Set per-model default inference parameters.",
+    "Customize prompt templates for specific models or use cases.",
+    "Run the application in Headless Mode for server-only operation.",
+    "Set an 'Idle TTL' (in seconds) via API requests or the CLI to automatically evict models from memory.",
+    "Enable Speculative Decoding in API requests by specifying a `draft_model`.",
+    "Control tool usage in API requests with the `tool_choice` parameter ('auto', 'none', 'required').",
+    "Include token usage statistics in streaming API responses by setting `stream_options.include_usage` to true.",
+    "Enable a separate `reasoning_content` field in chat completion responses for supported models via App Settings.",
+    "Customize the user interface by selecting different languages, UI modes, and color themes.",
+    "Speculative Decoding",
+    "Import Models",
+    "Per-model Defaults",
+    "Prompt Template customization",
+    "UI Language selection",
+    "UI Modes",
+    "Color Themes",
+    "Presets for model configurations (Importing, Sharing, Publishing, Pulling Updates, Pushing Revisions)",
+    "model.yaml for model definitions",
+    "API settings including Headless Mode, Idle TTL, and Auto-Evict",
+    "Customize the server API host and TCP port by passing a 'host:port' string when creating the client instance, for example: `lms.configure_default_client(\"localhost:1234\")`.",
+    "Check if a specified API server host is running using `lms.Client.is_valid_api_host(SERVER_API_HOST)`.",
+    "Determine the default local API server port by calling `lms.Client.find_default_local_api_host()`.",
+    "Set a system prompt for chat sessions, e.g., 'You answer questions concisely'.",
+    "Pass configuration parameters during LLM prediction calls.",
+    "Retrieve model load configurations using 'Get Load Config'.",
+    "Pass inferencing parameters like `temperature` and `maxTokens` via a `config` object to the `.respond()` method.",
+    "Use the `on_prompt_processing_progress` callback to receive updates on prompt processing as a float from 0.0 to 1.0.",
+    "Use the `on_first_token` callback, which is called after prompt processing is complete and the first token is being emitted.",
+    "Use the `on_prediction_fragment` callback, which is called for each prediction fragment received by the client.",
+    "Use the `on_message` callback, which is called with an assistant response message when the prediction is complete.",
+    "temperature",
+    "maxTokens",
+    "on_prompt_processing_progress",
+    "on_first_token",
+    "on_prediction_fragment",
+    "on_message",
+    "Instantiate a model handle by connecting to LM Studio, e.g., model = lms.llm(\"qwen2-vl-2b-instruct\").",
+    "Prepare an image for model input using lms.prepare_image(image_path), which accepts a file path, bytes object, or binary IO object.",
+    "Pass the prepared image handle to the model within a chat message, e.g., chat.add_user_message(\"Describe this image\", images=[image_handle]).",
+    "Generate a prediction from the model using the .respond() method.",
+    "Instantiate a specific model by its identifier (e.g., model = lms.llm(\"qwen2-vl-2b-instruct\"))",
+    "Prepare an image for input using the prepare_image() function, which accepts a file path, binary IO objects, or raw bytes.",
+    "Add a user message to a chat, optionally including images (e.g., chat.add_user_message(\"Describe this image please\", images=[image_handle]))",
+    "Utilize different API styles: convenience API, scoped resource API, or asynchronous API.",
+    "Access configuration parameters for LLM predictions.",
+    "Retrieve model load configuration and context length.",
+    "Enforce a structured response by providing a JSON schema or a class-based schema (using Pydantic or lmstudio.BaseModel) to the `response_format` parameter of the `.respond()` method.",
+    "Configuration Parameters for LLM predictions.",
+    "draftModel",
+    "stopStrings",
+    "maxPredictedTokens"
+  ]
+}

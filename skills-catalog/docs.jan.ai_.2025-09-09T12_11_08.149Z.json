@@ -1,0 +1,117 @@
+{
+  "data": {
+    "markdown": "[Skip to content](https://docs.jan.ai/#_top)\n\nWe just launched something cool! 👋Jan now [supports image 🖼️ attachments](https://docs.jan.ai/jan/multi-modal) 🎉\n\n# Jan\n\n![Jan's Cover Image](https://docs.jan.ai/_astro/jan_loaded.DgAXirn9_Z24X0OK.webp)\n\n## Jan’s Goal\n\n[Section titled “Jan’s Goal”](https://docs.jan.ai/#jans-goal)\n\n> We’re working towards open superintelligence to make a viable open-source alternative to platforms like ChatGPT\n> and Claude that anyone can own and run.\n\n## What is Jan Today\n\n[Section titled “What is Jan Today”](https://docs.jan.ai/#what-is-jan-today)\n\nJan is an open-source AI platform that runs on your hardware. We believe AI should be in the hands of many, not\ncontrolled by a few tech giants.\n\nToday, Jan is:\n\n- **A desktop app** that runs AI models locally or connects to cloud providers\n- **A model hub** making the latest open-source models accessible\n- **A connector system** that lets AI interact with real-world tools via MCP\n\nTomorrow, Jan aims to be a complete ecosystem where open models rival or exceed closed alternatives.\n\n## The Jan Ecosystem\n\n[Section titled “The Jan Ecosystem”](https://docs.jan.ai/#the-jan-ecosystem)\n\n### Jan Apps\n\n[Section titled “Jan Apps”](https://docs.jan.ai/#jan-apps)\n\n**Available Now:**\n\n- **Desktop**: Full-featured AI workstation for Windows, Mac, and Linux\n\n**Coming Late 2025:**\n\n- **Mobile**: Jan on your phone\n- **Web**: Browser-based access at jan.ai\n- **Server**: Self-hosted for teams\n- **Extensions**: Browser extension for Chrome-based browsers\n\n### Jan Model Hub\n\n[Section titled “Jan Model Hub”](https://docs.jan.ai/#jan-model-hub)\n\nMaking open-source AI accessible to everyone:\n\n- **Easy Downloads**: One-click model installation\n- **Jan Models**: Our own models optimized for local use\n\n  - **Jan-v1**: 4B reasoning model specialized in web search\n  - **Research Models**\n    - **Jan-Nano (32k/128k)**: 4B model for web search with MCP tools\n    - **Lucy**: 1.7B mobile-optimized for web search\n- **Community Models**: Any GGUF from Hugging Face works in Jan\n- **Cloud Models**: Connect your API keys for OpenAI, Anthropic, Gemini, and more\n\n### Jan Connectors Hub\n\n[Section titled “Jan Connectors Hub”](https://docs.jan.ai/#jan-connectors-hub)\n\nConnect AI to the tools you use daily via [Model Context Protocol](https://docs.jan.ai/mcp):\n\n**Creative & Design:**\n\n- **Canva**: Generate and edit designs\n\n**Data & Analysis:**\n\n- **Jupyter**: Run Python notebooks\n- **E2B**: Execute code in sandboxes\n\n**Web & Search:**\n\n- **Browserbase & Browser Use**: Browser automation\n- **Exa, Serper, Perplexity**: Advanced web search\n- **Octagon**: Deep research capabilities\n\n**Productivity:**\n\n- **Linear**: Project management\n- **Todoist**: Task management\n\n## Core Features\n\n[Section titled “Core Features”](https://docs.jan.ai/#core-features)\n\n- **Run Models Locally**: Download any GGUF model from Hugging Face, use OpenAI’s gpt-oss models,\nor connect to cloud providers\n- **OpenAI-Compatible API**: Local server at `localhost:1337` works with tools like\n[Continue](https://docs.jan.ai/server-examples/continue-dev) and [Cline](https://cline.bot/)\n- **Extend with MCP Tools**: Browser automation, web search, data analysis, and design tools, all\nthrough natural language\n- **Your Choice of Infrastructure**: Run on your laptop, self-host on your servers (soon), or use\ncloud when you need it\n\n## Philosophy\n\n[Section titled “Philosophy”](https://docs.jan.ai/#philosophy)\n\nJan is built to be user-owned:\n\n- **Open Source**: Apache 2.0 license\n- **Local First**: Your data stays on your device. Internet is optional\n- **Privacy Focused**: We don’t collect or sell user data. See our [Privacy Policy](https://docs.jan.ai/privacy)\n- **No Lock-in**: Export your data anytime. Use any model. Switch between local and cloud\n\n## The Path Forward\n\n[Section titled “The Path Forward”](https://docs.jan.ai/#the-path-forward)\n\n### What Works Today\n\n[Section titled “What Works Today”](https://docs.jan.ai/#what-works-today)\n\n- Run powerful models locally on consumer hardware\n- Connect to any cloud provider with your API keys\n- Use MCP tools for real-world tasks\n\n### What We’re Building\n\n[Section titled “What We’re Building”](https://docs.jan.ai/#what-were-building)\n\n- More specialized models that excel at specific tasks\n- Expanded app ecosystem (mobile, self-hosted server, web, extensions)\n- Richer connector ecosystem\n- An evaluation framework to build better models\n\n### The Long-Term Vision\n\n[Section titled “The Long-Term Vision”](https://docs.jan.ai/#the-long-term-vision)\n\nWe’re working towards open superintelligence where:\n\n- Open models match or exceed closed alternatives\n- Anyone can run powerful AI on their own hardware\n- The community drives innovation, not corporations\n- AI capabilities are owned by users, not rented\n\n## Quick Start\n\n[Section titled “Quick Start”](https://docs.jan.ai/#quick-start)\n\n1. [Download Jan](https://docs.jan.ai/quickstart) for your operating system\n2. Choose a model - download locally or add cloud API keys\n3. Start chatting or connect tools via MCP\n4. Build with our [local API](https://docs.jan.ai/api-server)\n5. Explore the [API Reference](https://docs.jan.ai/api) for Local and Server endpoints\n\n[API Reference](https://docs.jan.ai/api) Learn how to get started with the API Reference\n\n## Acknowledgements\n\n[Section titled “Acknowledgements”](https://docs.jan.ai/#acknowledgements)\n\nJan is built on the shoulders of giants:\n\n- [Llama.cpp](https://github.com/ggerganov/llama.cpp) for inference\n- [Model Context Protocol](https://modelcontextprotocol.io/) for tool integration\n- The open-source community that makes this possible\n\n## FAQs\n\n[Section titled “FAQs”](https://docs.jan.ai/#faqs)\n\nWhat is Jan?\n\nJan is an open-source AI platform working towards a viable alternative to Big Tech AI. Today it’s a desktop app that runs models locally or connects to cloud providers. Tomorrow it aims to be a complete ecosystem rivaling platforms like ChatGPT and Claude.\n\nHow is this different from other AI platforms?\n\nOther platforms are models behind APIs you rent. Jan is a complete AI ecosystem you own. Run any model, use real tools through MCP, keep your data private, and never pay subscriptions for local use.\n\nWhat models can I use?\n\n**Jan Models:**\n\n- Jan-Nano (32k/128k) - Research and analysis with MCP integration\n- Lucy - Mobile-optimized search (1.7B)\n- Jan-v1 - Reasoning and tool use (4B)\n\n**Open Source:**\n\n- OpenAI’s gpt-oss models (120b and 20b)\n- Any GGUF model from Hugging Face\n\n**Cloud (with your API keys):**\n\n- OpenAI, Anthropic, Mistral, Groq, and more\n\nWhat are MCP tools?\n\nMCP (Model Context Protocol) lets AI interact with real applications. Instead of just generating text, your AI can create designs in Canva, analyze data in Jupyter, browse the web, and execute code - all through conversation.\n\nIs Jan compatible with my system?\n\n**Supported OS**:\n\n- [Windows 10+](https://docs.jan.ai/docs/desktop/windows#compatibility)\n- [macOS 12+](https://docs.jan.ai/docs/desktop/mac#compatibility)\n- [Linux (Ubuntu 20.04+)](https://docs.jan.ai/docs/desktop/linux)\n\n**Hardware**:\n\n- Minimum: 8GB RAM, 10GB storage\n- Recommended: 16GB RAM, GPU (NVIDIA/AMD/Intel/Apple), 50GB storage\n\nHow realistic is ‘open superintelligence’?\n\nHonestly? It’s ambitious and uncertain. We believe the combination of rapidly improving open models, better consumer hardware, community innovation, and specialized models working together can eventually rival closed platforms. But this is a multi-year journey with no guarantees. What we can guarantee is that we’ll keep building in the open, with the community, towards this goal.\n\nWhat can Jan actually do today?\n\nRight now, Jan can:\n\n- Run models like Llama, Mistral, and our own Jan models locally\n- Connect to cloud providers if you want more power\n- Use MCP tools to create designs, analyze data, browse the web, and more\n- Work completely offline once models are downloaded\n- Provide an OpenAI-compatible API for developers\n\nIs Jan really free?\n\n**Local use**: Always free, no catches\n**Cloud models**: You pay providers directly (we add no markup)\n**Jan cloud**: Optional paid services coming 2025\n\nThe core platform will always be free and open source.\n\nHow does Jan protect privacy?\n\n- Runs 100% offline once models are downloaded\n- All data stored locally in [Jan Data Folder](https://docs.jan.ai/docs/data-folder)\n- No telemetry without explicit consent\n- Open source code you can audit\n\nCan I self-host Jan?\n\nYes. Download directly or build from [source](https://github.com/menloresearch/jan). Jan Server for production deployments coming late 2025.\n\nWhen will mobile/web versions launch?\n\n- **Jan Web**: Beta late 2025\n- **Jan Mobile**: Late 2025\n- **Jan Server**: Late 2025\n\nAll versions will sync seamlessly.\n\nHow can I contribute?\n\n- Code: [GitHub](https://github.com/menloresearch/jan)\n- Community: [Discord](https://discord.gg/FTk2MvZwJH)\n- Testing: Help evaluate models and report bugs\n- Documentation: Improve guides and tutorials\n\nAre you hiring?\n\nYes! We love hiring from our community. Check [Careers](https://menlo.bamboohr.com/careers).",
+    "metadata": {
+      "twitter:card": "summary_large_image",
+      "generator": [
+        "Astro v5.12.1",
+        "Starlight v0.35.1"
+      ],
+      "title": "Jan | 👋 Jan",
+      "favicon": "https://docs.jan.ai/favicon.ico",
+      "og:title": "Jan",
+      "viewport": "width=device-width, initial-scale=1",
+      "og:type": "article",
+      "ogLocale": "en",
+      "ogSiteName": "👋 Jan",
+      "ogTitle": "Jan",
+      "og:locale": "en",
+      "og:site_name": "👋 Jan",
+      "twitter:site": "@jandotai",
+      "description": "Working towards open superintelligence through community-driven AI",
+      "og:url": "https://docs.jan.ai/",
+      "ogDescription": "Working towards open superintelligence through community-driven AI",
+      "ogUrl": "https://docs.jan.ai/",
+      "language": "en",
+      "og:description": "Working towards open superintelligence through community-driven AI",
+      "scrapeId": "2cea90a1-453e-4f35-959c-ed30cd2013dc",
+      "sourceURL": "docs.jan.ai/",
+      "url": "https://docs.jan.ai/",
+      "statusCode": 200,
+      "contentType": "text/html; charset=utf-8",
+      "proxyUsed": "basic",
+      "cacheState": "miss",
+      "creditsUsed": 5
+    },
+    "json": {
+      "company_name": "Jan",
+      "company_description": "Jan is an open-source AI platform that runs on your hardware. We believe AI should be in the hands of many, not controlled by a few tech giants. Today, Jan is: A desktop app that runs AI models locally or connects to cloud providers. A model hub making the latest open-source models accessible. A connector system that lets AI interact with real-world tools via MCP. Tomorrow, Jan aims to be a complete ecosystem where open models rival or exceed closed alternatives."
+    }
+  },
+  "id": "cXyU4_zemQVpASyBY4uiz",
+  "startedAt": "2025-09-09T12:11:08.149Z",
+  "endedAt": "2025-09-09T12:11:12.836Z",
+  "endpoint": "scrape",
+  "formState": {
+    "extractSetupCompleted": false,
+    "urls": [],
+    "extractSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_mission": {
+          "type": "string"
+        },
+        "supports_sso": {
+          "type": "boolean"
+        },
+        "is_open_source": {
+          "type": "boolean"
+        },
+        "is_in_yc": {
+          "type": "boolean"
+        }
+      }
+    },
+    "extractPrompt": "Extract the company details, following the schema.",
+    "enableWebSearch": false,
+    "options": {
+      "onlyMainContent": true,
+      "parsePDF": true,
+      "stealthMode": false,
+      "excludeTags": [],
+      "includeTags": [],
+      "waitFor": "",
+      "timeout": "",
+      "maxAge": "2 days",
+      "ignoreSitemap": false,
+      "crawlEntireDomain": false,
+      "sitemap": "include",
+      "limit": 10,
+      "maxDepth": "",
+      "excludePaths": [],
+      "includePaths": [],
+      "includeSubdomains": false,
+      "search": "",
+      "scrapeContentFromSearchResults": true,
+      "timeBasedSearch": "",
+      "location": "",
+      "prompt": ""
+    },
+    "formats": [
+      "markdown",
+      "json"
+    ],
+    "sources": [
+      "web"
+    ],
+    "categories": [],
+    "jsonSchema": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "company_name": {
+          "type": "string"
+        },
+        "company_description": {
+          "type": "string"
+        }
+      }
+    },
+    "agent": {},
+    "url": "docs.jan.ai/",
+    "endpoint": "scrape"
+  },
+  "status": "success",
+  "version": "5GCnK9dlPjZk91aIdemGk"
+}

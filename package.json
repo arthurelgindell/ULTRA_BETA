@@ -1,0 +1,23 @@
+{
+  "name": "ultra-lm-studio",
+  "version": "1.0.0",
+  "description": "ULTRA project with LM Studio integration",
+  "main": "extract-lm-studio.mjs",
+  "scripts": {
+    "test:context": "node Tests/lm-studio-context-test.js",
+    "test:performance": "node Tests/lm-studio-performance-test.js",
+    "test:concurrent": "node Tests/lm-studio-concurrent-test.js",
+    "test:all": "npm run test:context && npm run test:performance && npm run test:concurrent",
+    "extract": "node extract-lm-studio.mjs"
+  },
+  "keywords": [
+    "lm-studio",
+    "mlx",
+    "ai",
+    "apple-silicon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

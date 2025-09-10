@@ -1,0 +1,86 @@
+# Codex Configuration for ULTRA Project
+# This file configures Codex CLI for the ULTRA AI integration project
+
+# Set default working directory
+working_directory: /Volumes/DATA/ULTRA
+
+# Model configuration
+model: gpt-4-turbo-preview
+temperature: 0.7
+max_tokens: 4000
+
+# Project context
+system_prompt: |
+  You are working on the ULTRA project, a local-first AI integration system.
+  Key components:
+  - LM Studio for local AI inference (port 1234)
+  - MCP Shell Server for sandboxed system operations
+  - MCP Firecrawl Server for web scraping
+  - Python 3.11 environment at mcp/shell/.venv
+  - Node.js project for Firecrawl at mcp-firecrawl/
+  
+  Follow the CONSTITUTION.md principles:
+  - Execute with precision, report with accuracy
+  - Never fabricate success - verify everything
+  - Default state = FAILED until proven otherwise
+  
+  All components must remain portable in /Volumes/DATA/ULTRA.
+
+# Approval mode for safety
+approval_mode: required
+
+# Include patterns for relevant files
+include_patterns:
+  - "*.js"
+  - "*.py"
+  - "*.md"
+  - "*.json"
+  - "*.sh"
+  - "*.toml"
+  - "*.yaml"
+  - "*.yml"
+
+# Exclude patterns
+exclude_patterns:
+  - "node_modules/**"
+  - ".venv/**"
+  - "*.pyc"
+  - "__pycache__/**"
+  - ".git/**"
+  - "dist/**"
+  - "build/**"
+
+# Custom aliases for common tasks
+aliases:
+  test-all: "npm run test:all"
+  test-mcp: "python mcp/shell/test_server.py"
+  check-lm: "./start-lm-studio-server.sh"
+  build-firecrawl: "cd mcp-firecrawl && npm run build"
+  activate-venv: "source mcp/shell/.venv/bin/activate"
+
+# Safety settings
+safe_mode: true
+confirm_destructive: true
+backup_before_modify: true
+
+# Integration with local tools
+integrations:
+  lm_studio:
+    url: "http://localhost:1234"
+    models:
+      - "qwen3-30b-a3b-instruct-2507-mlx"
+      - "devstral-small-2507-mlx"
+  
+  mcp_shell:
+    path: "/Volumes/DATA/ULTRA/mcp/shell"
+    python: "/opt/homebrew/bin/python3.11"
+  
+  mcp_firecrawl:
+    path: "/Volumes/DATA/ULTRA/mcp-firecrawl"
+
+# Environment variables
+environment:
+  SHELL_ALLOWLIST: "ls,cat,echo,pwd"
+  SHELL_CWD: "/Volumes/DATA/ULTRA"
+  NO_NET: "1"
+  ULTRA_HOME: "/Volumes/DATA/ULTRA"
